@@ -1,0 +1,146 @@
+name: MechTech
+main: com.dragonflame.main.Main
+version: 1.0.0
+commands:
+  tpa:
+    usage: /<command> <player>
+    description: Sends a tp request to a player
+    permission: dragonflame.tpa
+  tpaccept:
+    usage: /<command>
+    description: Accepts a tp request
+    permission: dragonflame.tpa
+  tpdeny:
+    usage: /<command>
+    description: Denies a tp request
+    permission: dragonflame.tpa
+  back:
+    usage: /<command>
+    description: Goes back to your previous location
+    permission: dragonflame.back
+  home:
+    usage: /<command> [name]
+    description: Goes to a home (max 3)
+    permission: dragonflame.home
+  delhome:
+    usage: /<command> [name]
+    description: Deletes a specified home
+    permission: dragonflame.home
+  sethome:
+    usage: /<command> [name]
+    description: Sets a specified home
+    permission: dragonflame.home
+  f:
+    usage: /<command>
+    description: Ask an operator
+    permission: dragonflame.f
+  spawn:
+    usage: /<command>
+    description: Goes to spawn
+    permission: dragonflame.spawn
+  temp:
+    usage: /<command>
+    description: Don't use this unless you wanna break everyone's homes
+    permission: dragonflame.temp
+  book:
+    usage: /<command>
+    description: Gives a detailed book containing information
+    permission: dragonflame.book
+  recipebook:
+    usage: /<command>
+    description: Gives a book containing all recipes of custom items
+    permission: dragonflame.book
+  oldhome:
+    usage: /<command>
+    description: Temporary command, move these homes over to the old one.
+    permission: dragonflame.old
+  fly:
+    usage: /<command>
+    description: Gives the player access to flight.
+    permission: dragonflame.fly
+  echest:
+    usage: /<command>
+    description: Opens player's enderchest.
+    permission: dragonflame.echest
+  repair:
+    usage: /<command>
+    description: Repairs current item in hand.
+    permission: dragonflame.repair
+  feed:
+    usage: /<command>
+    description: Restores all food.
+    permission: dragonflame.feed
+  invsee:
+    usage: /<command> [name]
+    description: Opens a player inventory.
+    permission: dragonflame.invsee
+  hat:
+    usage: /<command>
+    description: Puts item in main hand on head.
+    permission: dragonflame.hat
+  ttp:
+    usage: /<command> <player> [player]
+    description: Tps 2 players and stores to their back
+    permission: dragonflame.tp
+  nick:
+    usage: /<command> <nick>
+    description: Changes your display name!
+    permission: dragonflame.nick
+  vanish:
+    usage: /<command>
+    description: Hides you from other players
+    permission: dragonflame.vanish
+  whois:
+    usage: /<command> {player}
+    description: Gives username of a nicked player
+  broadcast:
+    usage: /<command> {message}
+    description: Broadcast message lol
+    permission: dragonflame.broadcast
+permissions:
+ dragonflame.broadcast:
+  default: op
+ dragonflame.vanish:
+  default: op
+ dragonflame.old:
+  default: op
+ dragonflame.book:
+  default: true
+ dragonflame.spawn:
+  default: true
+ dragonflame.tpa:
+  default: true
+ dragonflame.back:
+  default: true
+ dragonflame.home:
+  default: true
+ dragonflame.home.six:
+  default: op
+ dragonflame.home.infinite:
+  default: op
+ dragonflame.tp:
+  default: op
+ dragonflame.f:
+  default: op
+ dragonflame.home.op:
+  default: op
+ dragonflame.temp:
+  default: op
+ dragonflame.fly:
+  default: op
+ dragonflame.flyothers:
+  default: op
+ dragonflame.echest:
+  default: op
+ dragonflame.echestothers:
+  default: op
+ dragonflame.repair:
+  default: op
+ dragonflame.feed:
+  default: op
+ dragonflame.invsee:
+  default: op
+ dragonflame.hat:
+  default: op
+ dragonflame.nick:
+  default: op
